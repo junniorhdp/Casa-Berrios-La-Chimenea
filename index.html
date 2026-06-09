@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Berrios "La Chimenea" | Restaurante & Gastrobar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Casa Berrios <span>"La Chimenea"</span></a>
+            
+            <nav class="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Nuestro Menú</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#contacto" class="btn-nav">Reservar / Pedir</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div> <div class="hero-content">
+                <p class="hero-subtitle">Gastrobar & Restaurante en Bogotá</p>
+                <h1>Sabores caseros, carnes a la plancha y el mejor ambiente</h1>
+                <p class="hero-description">Disfruta de la mejor atención de Tierra Nueva. Almuerzos deliciosos, comidas rápidas y tragos para compartir con amigos.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">🔥 Ver el Menú</a>
+                    <a href="#contacto" class="btn btn-secondary">📍 Ubicación</a>
+                </div>
+            </div>
+        </section>
+
+       <section id="experiencias" class="features-section-premium">
+    <div class="container">
+        <div class="section-title">
+            <h2>Mucho más que un Gastrobar</h2>
+            <div class="title-line"></div>
+            <p>El lugar perfecto en el sur de la ciudad para tus mejores momentos</p>
+        </div>
+
+        <div class="bento-grid">
+            
+            <div class="bento-card card-large">
+                <div class="bento-card-bg" style="background-image: linear-gradient(to top, rgba(17,17,21,0.95), rgba(17,17,21,0.4)), url('https://media-cdn.tripadvisor.com/media/photo-s/26/f4/bc/07/los-mejores-espacios.jpg');"></div>
+                <div class="bento-card-content">
+                    <span class="bento-tag">🎵 Buena Música</span>
+                    <h3>Ambiente Imperdible</h3>
+                    <p>Un espacio cálido con la combinación perfecta de luces y sonido envolvente. Ponemos la música ideal para acompañar tus charlas y prender el ambiente sin que el volumen te impida conversar.</p>
+                </div>
+            </div>
+
+            <div class="bento-card card-medium">
+                <div class="bento-card-bg" style="background-image: linear-gradient(to top, rgba(17,17,21,0.95), rgba(17,17,21,0.3)), url('https://images.unsplash.com/photo-1540747737956-3787217526ed?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="bento-card-content">
+                    <span class="bento-tag">⚽ Transmisiones</span>
+                    <h3>Pantalla Gigante & TV</h3>
+                    <p>No te pierdas los partidos de la liga, la Selección o tus eventos deportivos favoritos con la mejor definición y ambiente de tribuna.</p>
+                </div>
+            </div>
+
+            <div class="bento-card card-medium">
+    <div class="bento-card-bg" style="background-image: linear-gradient(to top, rgba(17,17,21,0.95), rgba(17,17,21,0.3)), url('https://www.cantinala15.com/wp-content/uploads/2024/11/Plan-Cantina-cumpelanos-1463x2048.jpg');"></div>
+    <div class="bento-card-content">
+        <span class="bento-tag">🎁 Promociones</span>
+        <h3>Celebra tu Cumpleaños</h3>
+        <p>¡Tu día se celebra con nosotros! Reserva tu mesa para tu grupo de amigos y recibe un cóctel de cortesía de la casa y descuentos especiales en la cuenta.</p>
+    </div>
+</div>
+
+            <div class="bento-card card-wide">
+                <div class="bento-card-content-inline">
+                    <div class="bento-icon-box">💰</div>
+                    <div>
+                        <h3>Precios al Alcance de Todos</h3>
+                        <p>Disfruta de coctelería premium, cervezas ultra frías y platos deliciosos con precios justos y cómodos para el bolsillo. ¡El cobro ajustado que estabas buscando para parchar sin remordimientos!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestra Carta</h2>
+            <div class="title-line"></div>
+            <p>Selecciona una categoría y descubre tus próximos sabores favoritos</p>
+        </div>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="filtrarMenu('todos')">✨ Todo el Menú</button>
+            <button class="tab-btn" onclick="filtrarMenu('carnes')">🥩 Platos & Carnes</button>
+            <button class="tab-btn" onclick="filtrarMenu('rapidas')">🍔 Comidas Rápidas</button>
+            <button class="tab-btn" onclick="filtrarMenu('bebidas')">🍹 Bebidas & Bar</button>
+        </div>
+
+        <div class="menu-grid-premium">
+            
+            <div class="menu-card-premium" data-categoria="carnes">
+                <div class="menu-card-img-box">
+                    <img src="https://imag.bonviveur.com/emplatado-final-del-lomo-de-cerdo-a-la-plancha.jpg" alt="Carne de Cerdo a la Plancha">
+                    <span class="card-badge popular">🔥 El Más Vendido</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Carne de Cerdo a la Plancha</h3>
+                        <span class="price">$15.000</span>
+                    </div>
+                    <p class="menu-card-text">Acompañado de patacón crujiente, arroz blanco, papas a la francesa y ensalada casera tipo guacamole.</p>
+                    <a href="https://wa.me/573133654312?text=Hola,%20me%20gustaría%20pedir%20la%20Carne%20de%20Cerdo%20a%20la%20Plancha" target="_blank" class="btn-card-order">
+                        🛒 Ordenar plato
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-card-premium" data-categoria="rapidas">
+                <div class="menu-card-img-box">
+                    <img src="https://media.diariouno.com.ar/p/bd76cabff9902b77d408387a155404c2/adjuntos/298/imagenes/009/175/0009175576/1200x675/smart/hamburguesas-caserasjpg.jpg" alt="Hamburguesa de la Casa">
+                    <span class="card-badge chef">⭐ Recomendado</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Hamburguesa de la Casa</h3>
+                        <span class="price">$14.000</span>
+                    </div>
+                    <p class="menu-card-text">Carne artesanal premium, queso doble crema fundido, vegetales seleccionados y la icónica salsa de la casa.</p>
+                    <a href="https://wa.me/573133654312?text=Hola,%20me%20gustaría%20pedir%20la%20Hamburguesa%20de%20la%20Casa" target="_blank" class="btn-card-order">
+                        🛒 Ordenar plato
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-card-premium" data-categoria="rapidas">
+                <div class="menu-card-img-box">
+                    <img src="https://imag.bonviveur.com/chicharron-de-cerdo.jpg" alt="Chicharrón de la Casa">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Chicharrón de la Casa</h3>
+                        <span class="price">$12.000</span>
+                    </div>
+                    <p class="menu-card-text">Porción de chicharrón carnudo, tierno por dentro y con una costra ultra crujiente por fuera. Servido con limón.</p>
+                    <a href="https://wa.me/573133654312?text=Hola,%20me%20gustaría%20pedir%20el%20Chicharrón%20de%20la%20Casa" target="_blank" class="btn-card-order">
+                        🛒 Ordenar plato
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-card-premium" data-categoria="bebidas">
+                <div class="menu-card-img-box">
+                    <img src="https://coctelia.com/wp-content/uploads/2020/04/orgasmo-coctel.jpg" alt="Cóctel Orgasmo">
+                    <span class="card-badge promo">🔥 Favorito Bar</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Cóctel "Orgasmo"</h3>
+                        <span class="price">$18.000</span>
+                    </div>
+                    <p class="menu-card-text">Una de las mejores especialidades cremosas y dulces de nuestra barra. Ideal para abrir la noche con amigos.</p>
+                    <a href="https://wa.me/573133654312?text=Hola,%20me%20gustaría%20pedir%20el%20Coctel%20Orgasmo" target="_blank" class="btn-card-order">
+                        🍹 Pedir trago
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-card-premium" data-categoria="bebidas">
+                <div class="menu-card-img-box">
+                    <img src="https://i.pinimg.com/736x/d2/00/74/d200749477da3e52cd20a458774b2fa7.jpg" alt="Cervezas Nacionales">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Cervezas Nacionales</h3>
+                        <span class="price">$5.000</span>
+                    </div>
+                    <p class="menu-card-text">Nacionales e importadas servidas al clima de Bogotá o ultra frías para acompañar tus charlas o eventos deportivos.</p>
+                    <a href="https://wa.me/573133654312?text=Hola,%20me%20gustaría%20pedir%20Cervezas%20Nacionales" target="_blank" class="btn-card-order">
+                        🍺 Pedir bebida
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-card-premium" data-categoria="bebidas">
+                <div class="menu-card-img-box">
+                    <img src="https://image.tuasaude.com/media/article/ig/ax/suco-de-graviola_67028.jpg?width=686&height=487" alt="Jugos Naturales">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Jugo Natural de Guanábana</h3>
+                        <span class="price">$5.000</span>
+                    </div>
+                    <p class="menu-card-text">Fruta 100% natural y seleccionada, preparado al instante en agua o crema de leche según tu preferencia.</p>
+                    <a href="https://wa.me/573133654312?text=Hola,%20me%20gustaría%20pedir%20un%20Jugo%20de%20Guanabana" target="_blank" class="btn-card-order">
+                        🥤 Pedir jugo
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <section id="opiniones" class="reviews-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="title-line"></div>
+            <p>Calificación de ⭐ 4.8 / 5 en Google Maps basada en opiniones reales</p>
+        </div>
+
+        <div class="carousel-wrapper-infinite">
+            <div class="carousel-track">
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"Excelente servicio con cobro ajustado, ambiente tranquilo y agradable, ponen buena música sin que el volumen moleste."</p>
+                    <div class="review-scores"><span>🍔 Comida: 4</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">John Cruz</h4>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"Un lugar cálido perfecto para plan de amigos. Mi opinión favorita es la hamburguesa de la casa, el chicharrón y el cóctel 'orgasmo'."</p>
+                    <div class="review-scores"><span>🍔 Comida: 5</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">Laura Milena Cantor</h4>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"El mejor gastrobar al sur de la ciudad. Precios buenos al alcance de todos. Comida deliciosa."</p>
+                    <div class="review-scores"><span>🍔 Comida: 5</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">Omar Garzón</h4>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"Qué lugar tan rico para comer, todo es delicioso y de buen precio, el servicio es increíble."</p>
+                    <div class="review-scores"><span>🍔 Comida: 5</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">Sally</h4>
+                </div>
+
+
+                <div class="review-card" aria-hidden="true">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"Excelente servicio con cobro ajustado, ambiente tranquilo y agradable, ponen buena música sin que el volumen moleste."</p>
+                    <div class="review-scores"><span>🍔 Comida: 4</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">John Cruz</h4>
+                </div>
+
+                <div class="review-card" aria-hidden="true">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"Un lugar cálido perfecto para plan de amigos. Mi opinión favorita es la hamburguesa de la casa, el chicharrón y el cóctel 'orgasmo'."</p>
+                    <div class="review-scores"><span>🍔 Comida: 5</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">Laura Milena Cantor</h4>
+                </div>
+
+                <div class="review-card" aria-hidden="true">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"El mejor gastrobar al sur de la ciudad. Precios buenos al alcance de todos. Comida deliciosa."</p>
+                    <div class="review-scores"><span>🍔 Comida: 5</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">Omar Garzón</h4>
+                </div>
+
+                <div class="review-card" aria-hidden="true">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="google-badge">Google</span>
+                    </div>
+                    <p class="review-text">"Qué lugar tan rico para comer, todo es delicioso y de buen precio, el servicio es increíble."</p>
+                    <div class="review-scores"><span>🍔 Comida: 5</span><span>🙋‍♂️ Servicio: 5</span><span>🎵 Ambiente: 5</span></div>
+                    <h4 class="review-author">Sally</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container grid-2">
+                <div class="contact-details">
+                    <h2>¡Visítanos o haz tu pedido ya!</h2>
+                    <p class="contact-intro">Estamos listos para darte la bienvenida en nuestro salón principal o preparar tu pedido para que pases a recogerlo.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <strong>Dirección</strong>
+                                <p>Tierra Nueva, Bogotá, Colombia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <strong>Teléfono Celular</strong>
+                                <p>+57 313 3654312</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🕒</span>
+                            <div>
+                                <strong>Servicios Disponibles</strong>
+                                <p>Consumo en el lugar • Para llevar • Eventos y Recepciones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/573133654312?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20hacer%20un%20pedido%20o%20reserva" target="_blank" class="btn btn-whatsapp">
+                        <svg class="whatsapp-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:8px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 12.008 0c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 12.004-11.953 12.004-1.997-.001-3.961-.5-5.716-1.453L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.853-9.852.001-2.633-1.025-5.105-2.89-6.973C17.157 1.862 14.69 .836 12.008.835 6.579.835 2.157 5.253 2.154 10.688c-.001 1.932.504 3.823 1.464 5.432l-.999 3.648 3.73-.978zm13.48-10.233c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                        Pedir a domicilio por WhatsApp
+                    </a>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-74.2000%2C4.5500%2C-74.0000%2C4.7500&amp;layer=mapnik" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+                    <a href="https://www.google.com/maps/place/Casa+Berrios+%22La+Chimenea%22/@4.5309095,-74.0885755,17z/data=!4m15!1m8!3m7!1s0x8e3fa38a05e434b5:0x67731250ba5b8d4d!2sCasa+Berrios+%22La+Chimenea%22!8m2!3d4.530899!4d-74.0886598!10e5!16s%2Fg%2F11qysvl1n8!3m5!1s0x8e3fa38a05e434b5:0x67731250ba5b8d4d!8m2!3d4.530899!4d-74.0886598!16s%2Fg%2F11qysvl1n8?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-floating-btn">
+                        🗺️ Abrir en Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Casa Berrios "La Chimenea". Todos los derechos reservados.</p>
+        <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 6px; font-weight: 300; letter-spacing: 0.5px;">Gastrobar & Real Food Experience</p>
+    </footer>
+
+
+
+    <script>
+        function filtrarMenu(categoria) {
+            // 1. Manejar las clases activas en los botones de pestañas
+            const botones = document.querySelectorAll('.tab-btn');
+            botones.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // 2. Filtrar las tarjetas del menú
+            const tarjetas = document.querySelectorAll('.menu-card-premium');
+            
+            tarjetas.forEach(tarjeta => {
+                const catTarjeta = tarjeta.getAttribute('data-categoria');
+                
+                if (categoria === 'todos' || catTarjeta === categoria) {
+                    tarjeta.classList.remove('hidden');
+                } else {
+                    tarjeta.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>
+
+</body>
+</html>
